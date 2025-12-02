@@ -31,30 +31,29 @@ const modalDesc = document.getElementById("modalDesc");
 const modalDownload = document.getElementById("modalDownload");
 
 const projectData = {
+
     techdesc: {
         title: "Technical Description",
         desc: `
         <p>
-            This technical description treats ki from Dragon Ball as if it were a real, measurable
-            engineering system. It explains how energy is created and used by
-            characters, breaking the fictional concept into real-world structures.
+            This project explains how ki works in Dragon Ball by treating it like a real system.
+            The goal was to take a fictional idea and break it down in a clear, structured way.
         </p>
 
         <br>
 
         <ul>
-            <li>Defines ki as a quantifiable energy source with inputs, outputs, and constraints.</li>
-            <li>Explains components such as focus, stamina, amplification, and technique control.</li>
-            <li>Uses real technical-writing frameworks like classifications and processes.</li>
-            <li>Connects mechanics to specific Dragon Ball scenes to show system consistency.</li>
-            <li>Analyzes limitations such as fatigue, power strain, scaling, and physical requirements.</li>
+            <li>Defines ki as an energy source with limits and requirements.</li>
+            <li>Breaks down focus, stamina, amplification, and control.</li>
+            <li>Uses real technical writing tools like classifications and processes.</li>
+            <li>Connects ideas to several moments from the series.</li>
         </ul>
 
         <br>
 
         <p>
-            The document applies engineering logic to a fictional system, showing how clear structure
-            and real-world framing can make complex ideas easier to explain and understand.
+            The writeup keeps the tone simple and focused while showing how structure
+            can make even fictional concepts easier to understand.
         </p>
         `,
         file: "assets/Joni_Technical Description.pdf"
@@ -64,92 +63,61 @@ const projectData = {
         title: "Instruction Set",
         desc: `
         <p>
-            This instruction set teaches players how to approach Undertale in the Pacifist Route by explaining
-            how choices, mechanics, and progression paths work. It guides players through the game's
-            branching routes using clear steps and structured technical-writing conventions.
+            This instruction set guides players through the Pacifist Route in Undertale.
+            It emphasizes clear choices, cause-and-effect, and understanding how actions
+            change the story.
         </p>
 
         <br>
 
         <ul>
-            <li>Breaks down the Pacifist route with defined triggers and outcomes.</li>
-            <li>Provides step-by-step instructions for movement, combat, puzzles, and dialogue choices.</li>
-            <li>Explains how the game tracks player actions and uses them to lock or unlock story paths.</li>
-            <li>Describes enemy behavior, ACT options, and how non-violence affects progression.</li>
-            <li>Includes tips for boss mechanics and high-impact story decisions.</li>
-            <li>Uses headings, warnings, and ordered lists to mirror professional instruction-set formatting.</li>
+            <li>Explains how to stay on the Pacifist Route from the start.</li>
+            <li>Breaks down combat, ACT options, and progression triggers.</li>
+            <li>Gives simple steps for boss fights and story decisions.</li>
+            <li>Uses headings, warnings, and step-by-step formatting.</li>
         </ul>
 
         <br>
 
         <p>
-            The guide helps players understand Undertale's design logic so their choices feel deliberate
-            instead of random, creating a more meaningful narrative experience.
+            The goal was to make the game feel more intentional, not random,
+            by helping players understand the logic behind each decision.
         </p>
         `,
         file: "assets/Joni_Instruction.pdf"
     },
 
-    rhetorical: {
-        title: "Rhetorical Analysis",
+    breath: {
+        title: "Healthy Breath Classifier",
         desc: `
         <p>
-            This rhetorical analysis evaluates the <i>Science Fair Fun</i> booklet by examining how it speaks
-            to students, parents, and teachers. It focuses on how design and tone support the
-            booklet’s purpose of guiding science-fair beginners through project planning.
+            This machine-learning project uses gas sensor data to classify breath samples
+            as pre workout or post workout. The dataset included measurements of acetone,
+            CO₂, methane, hydrogen, humidity, and other variables.
         </p>
 
         <br>
 
         <ul>
-            <li>Identifies the booklet’s primary purpose and how it serves multiple audiences.</li>
-            <li>Analyzes tone, word choice, and approachability for young readers.</li>
-            <li>Evaluates visual design elements such as headings, spacing, diagrams, and layout.</li>
-            <li>Assesses clarity of instructions and how well steps support the scientific process.</li>
-            <li>Examines example projects and models provided in the booklet.</li>
-            <li>Highlights strengths and weaknesses in how the booklet motivates or confuses readers.</li>
+            <li>Cleaned and merged all breath samples into one dataset.</li>
+            <li>Created features like gas ratios and humidity patterns.</li>
+            <li>Compared class weighting vs SMOTE for imbalance.</li>
+            <li>Tested Random Forest, KNN, and logistic models.</li>
+            <li>Found humidity and methane–hydrogen trends were most useful.</li>
+            <li>Weighted Random Forest performed the best overall.</li>
         </ul>
 
         <br>
 
         <p>
-            Overall, the analysis shows how the booklet’s writing and design choices shape reader
-            understanding and influence how students approach real science projects.
+            The project shows how sensor data and simple feature engineering can build
+            a practical classifier for physiological changes.
         </p>
         `,
-        file: "assets/Joni_Rhetorical Analysis.pdf"
-    },
-
-    internet: {
-        title: "Internet Resource Guide",
-        desc: `
-        <p>
-            This resource guide introduces engineering students to credible sources
-            that support research and learning. It is structured as a quick-reference
-            document with clear categories and concise explanations.
-        </p>
-
-        <br>
-
-        <ul>
-            <li>Organizes resources into categories such as research tools and engineering sites.</li>
-            <li>Explains what each tool provides and why it is useful in academic or technical settings.</li>
-            <li>Highlights resources that offer simulations, tutorials, reference sheets, and example problems.</li>
-            <li>Discusses reliability, credibility, and how to evaluate information quality online.</li>
-            <li>Provides productivity tips and recommended tools for scheduling and time management.</li>
-            <li>Shows real use cases to help students understand when to use each site.</li>
-        </ul>
-
-        <br>
-
-        <p>
-            The guide acts as a practical starting point for students learning how to navigate technical
-            information online efficiently and responsibly.
-        </p>
-        `,
-        file: "assets/Joni_Internet Resource Guide.pdf"
+        file: "assets/Healthy_Breath_2.pdf"
     }
 };
+
 
 // Handle clicks
 cards.forEach(card => {

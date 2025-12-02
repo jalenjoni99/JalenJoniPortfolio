@@ -203,7 +203,7 @@ html {
 /* RIGHT SIDE */
 .about-right {
     width: 30%;
-    padding-left: 70px;
+    padding-left: 50px;
 }
 
 .interests-list {
@@ -270,7 +270,7 @@ html {
 
 /* EXPERIENCE SECTION */
 .experience {
-    padding: 80px 12%;
+    padding: 100px 12%;
     background: #e9e9e9;
 }
 
@@ -293,6 +293,7 @@ html {
 .timeline {
     position: relative;
     padding: 40px 0 20px 0;
+    margin-top: 60px;
 }
 
 /* CENTER VERTICAL LINE */
@@ -363,6 +364,7 @@ html {
 .left-logo {
     float: left;
     margin-right: 12px;
+    margin-bottom: 80px;
 }
 
 /* right-side logo alignment */
@@ -399,15 +401,15 @@ html {
 /* Fix each year position cleanly and individually */
 
 .exp-cummins .timeline-year {
-    right: -155px;   /* left-side item → shift year RIGHT */
+    right: -205px;   /* left-side item → shift year RIGHT */
 }
 
 .exp-ucs .timeline-year {
-    left: -125px;    /* right-side item → shift LEFT */
+    left: -225px;    /* right-side item → shift LEFT */
 }
 
 .exp-udm .timeline-year {
-    right: -150px;   /* left-side item → shift RIGHT */
+    right: -215px;   /* left-side item → shift RIGHT */
 }
 
 .exp-edu .timeline-year {
@@ -432,10 +434,64 @@ html {
     line-height: 1.55;
 }
 
+/* Education Card (Timeline Style) */
+.timeline-style-card {
+    width: 50%;
+    margin: 40px auto;
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 22px 26px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    border: 1px solid #dddddd;
+}
+
+/* Header Layout */
+.edu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.edu-title h3 {
+    font-size: 1.4rem;
+    margin-bottom: 5px;
+}
+
+.edu-title h4 {
+    font-size: 1rem;
+    opacity: 0.85;
+    margin-bottom: 6px;
+}
+
+.edu-dates {
+    font-size: 0.9rem;
+    opacity: 0.75;
+}
+
+/* Logo on the right */
+.edu-logo {
+    width: 60px;
+    margin-right: 25px; 
+}
+
+/* Bullet List */
+.edu-list {
+    margin-top: 15px;
+    padding-left: 18px;
+}
+
+.edu-list li {
+    font-size: 0.95rem;
+    margin-bottom: 6px;
+    line-height: 1.55;
+}
+
+
+
 /* RESUME BUTTON */
 .resume-download {
     text-align: center;
-    margin-top: 70px;
+    margin-top: 50px;
 }
 
 .resume-btn {
@@ -494,7 +550,7 @@ html {
 /* Resume Button */
 .resume-download {
     text-align: center;
-    margin-top: 70px;
+    margin-top: 50px;
 }
 
 .resume-btn {
@@ -620,6 +676,15 @@ html {
     box-shadow: 0 8px 30px rgba(0,0,0,0.25);
     position: relative;
     animation: modalPop 0.25s ease-out;
+}
+
+#modalDesc ul {
+    padding-left: 10px !important;
+    margin-left: 10px !important;
+}
+
+#modalDesc li {
+    margin-bottom: 6px;
 }
 
 /* Small X in top-right */
